@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="container">
+            <h1 id="sudam"> This Text Come From html Doc</h1>
+            <div onclick="document.getElementById('sudam').innerHTML = sami(); ; " class="btn  btn-outline-primary">clik
+                me
+            </div>
+            <h1>
+                <script>
+                    document.write("This Text Come From  JS Doc");
+                </script>
+            </h1>
+        </div>
+    </div>
+
+
+    <script>
+        var f = " <p class='text-center h1' style='color:red;'> This is a simple var </p>";
+        $ff = "normal var";
+        $a = 11;
+        $b = 10;
+        document.write($a + $b);
+        ff = "super global var";
+        var txt1 = "John";
+        var txt2 = "Doe";
+
+        $txt3 = "<br>" + txt1 + " " + txt2;
+        document.write($txt3);
+
+        function sami(txt1, txt2) {
+            document.write("this text comes from function");
+        }
+        sami();
+        document.write("<br>");
+        if ($a > $b) {
+            document.write("this from if condition");
+        } else {
+            document.write("condition not matches");
+        }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
